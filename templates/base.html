@@ -14,7 +14,7 @@
 <body>
     <header>
         <!-- Main top navbar -->
-        <nav class="nav-extended text-shadow blue-grey darken-1">
+        <nav class="nav-extended text-shadow red accent-4">
             <div class="nav-wrapper">
             <a href="{{ url_for('get_tasks') }}" class="brand-logo">Task Manager</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
@@ -25,7 +25,7 @@
                 <li><a href="#">Manage Categories</a></li>
                 <li><a href="#">Log In</a></li>
                 <li><a href="#">Log Out</a></li>
-                <li><a href="#">Register</a></li>
+                <li><a href="{{ url_for('register') }}">Register</a></li>
             </ul>
             </div>
         </nav>
@@ -39,7 +39,7 @@
             <li><a href="#">Manage Categories</a></li>
             <li><a href="#">Log In</a></li>
             <li><a href="#">Log Out</a></li>
-            <li><a href="#">Register</a></li>
+            <li><a href="{{ url_for('register') }}">Register</a></li>
         </ul>
     </header>
     {% block content %}
